@@ -1,8 +1,13 @@
-package lesson3.labs.prob4;
+package Lab3.Prob4;
 
-public class Trailer  {
 
-	public double computeRent(){
-		return 500;
+public class Trailer extends Property {
+	private static final double RENT = 500;
+	public Trailer(Address address) {
+		super(address);
 	}
+	public double computeRent(){
+		return RENT;
+	}
+	
 }

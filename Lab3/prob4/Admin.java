@@ -1,22 +1,13 @@
-package lesson3.labs.prob4;
+package Lab3.Prob4;
+
+import java.util.List;
 
 public class Admin {
-	public static double computeTotalRent(Object[] properties) {
+	public static double computeTotalRent(List<Property> properties) {
 		double totalRent = 0;
-		for (Object o : properties) {
-			if (o instanceof House) {
-				House h = (House) o;
-				totalRent += h.computeRent();
-			}
-			else if (o instanceof Condo) {
-				Condo h = (Condo) o;
-				totalRent += h.computeRent();
-			}
-			else if (o instanceof Trailer) {
-				Trailer h = (Trailer) o;
-				totalRent += h.computeRent();
-			}	
-		}
+		for (Property property: properties)
+			totalRent += property.computeRent();
+
 		return totalRent;
 	}
 }
