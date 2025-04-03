@@ -7,7 +7,7 @@ public class Order {
     private String orderNum;
     private List<OrderLine> orderLines;
 
-    public Order(String orderNum) {
+    Order(String orderNum) {
         this.orderNum = orderNum;
         this.orderLines = new ArrayList<>();
     }
