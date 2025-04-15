@@ -1,0 +1,1 @@
+Java's ArrayList class extends AbstractList and implements RandomAccess, Cloneable, Serializable, List, Collection, Iterable.   
